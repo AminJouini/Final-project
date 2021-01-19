@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Lost n found</title>
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <span class="txt-type" data-wait="2000" data-words='["Lost & Found", "القى لي ضيعتو " , "في رمشة عين "]'></span>
+      
+        
+    </h1>
+    <h2>Anywhere in Tunisia&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; اي بلاصة في تونس</h2>
+
+    <div class="middle">
+      <a href="posts.html" class="btn btn3">Posts</a>
+      <a class="btn btn3"  data-toggle="modal" data-target="#exampleModal" type="button">Ad Lost</a>
+      
+    </div>
+  </div>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- form -->
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlFile1">Add a photo</label>
+              <br>
+              <input type="file" accept=".gif,.jpg,.jpeg,.png" class="form-control-file" id="photo">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="inputTitle">TITLE</label>
+                <input type="text" class="form-control" id="inputTitle"  placeholder="TITLE">
+              </div>
+              <div class="form-group">
+                <label for="inputDes">DESCRIPTION</label>
+                <input type="text" class="form-control" id="inputDes" placeholder="DESCRIPTION">
+              </div>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">CATEGORY</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>Objects</option>
+                <option>Pets</option>
+                <option>Electronics</option>
+                <option>Vehicules</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            
+           
+
+            <div class="form-row">
+            
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Phone number</label>
+                <input type="number" class="form-control" id="phone" placeholder="Phonenumber">
+              </div>
+            </div>
+            <div class="form-group">
+              
+            </div>
+           
+          </form>
+         
+        </div>
+        <div class="modal-footer">
+          
+          <button type="button" id='bttn' class="btn btn-primary"> Add post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>

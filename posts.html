@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="nav">
+    <ul>
+      <li>  <div class="input-group">
+        <div class="form-outline">
+          <input style="margin-top: 5px;" type="search" id="form1" placeholder="Search items"class="form-control" />
+          
+        </div>
+        
+      </div></li>
+      <li style="float: right; margin-top: 5px; margin-right: 15px;">
+        <button  data-toggle="modal" data-target="#exampleModal"  type="button" class="btn btn-light">Add lost</button>
+      </li>
+     
+    </ul>
+  </nav>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- form -->
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlFile1">Add a photo</label>
+              <br>
+              <input type="file" accept=".gif,.jpg,.jpeg,.png" class="form-control-file" id="photo">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="inputTitle">TITLE</label>
+                <input type="text" class="form-control" id="inputTitle"  placeholder="TITLE">
+              </div>
+              <div class="form-group">
+                <label for="inputDes">DESCRIPTION</label>
+                <input type="text" class="form-control" id="inputDes" placeholder="DESCRIPTION">
+              </div>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">CATEGORY</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>Objects</option>
+                <option>Pets</option>
+                <option>Electronics</option>
+                <option>Vehicules</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            
+           
+
+            <div class="form-row">
+            
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Phone number</label>
+                <input type="number" class="form-control" id="phone" placeholder="Phonenumber">
+              </div>
+            </div>
+            <div class="form-group">
+              
+            </div>
+           
+          </form>
+         
+        </div>
+        <div class="modal-footer">
+          
+          <button type="button" id='bttn' class="btn btn-primary"> Add post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <h2>Categories </h2>
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"> <img id="heart" src="list-text.png" alt="" srcset="">  Objects</a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile"> <img id="heart" src="pawprint.png" alt="" srcset="">Pets</a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"> <img id="heart" src="devices.png" alt="" srcset="">Electronics</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"> <img id="heart" src="car.png" alt="" srcset="">Vehicules</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div id="list-home"></div>
+            <div class="tab-pane" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"><div class="post">
+              <div class="img">
+                <img src="watch.jpg"  alt="">
+              </div>
+              <div class="post-info">
+                <div class="date">
+                  <span>Rades</span>
+                
+                </div>
+                <h1 class="title">
+                  I lost my watch 
+                </h1>
+                <p class="text">
+                  I lost my watch today in rades , don't hesitate to call me if you find it.
+                </p>
+                <h4>Contact</h4>
+                <p class="text">
+                  Number : 99 888 000  
+                </p>
+                <p class="text">
+                  Mail : Riadh@gmail.com 
+                </p>
+                <div class="con">
+                  <a id="heart4">
+                    <img type="button" id="heart4" src="heart-line.png" alt="" srcset="">
+                  </a>
+                  <a id="heart1">
+                    <img id="heart" data-toggle="modal" data-target="#exampleModal1"  type="button" src="conversation.png" alt="" srcset="">
+                  </a>
+                </div>
+              </div>
+            </div></div>
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+              <div class="post">
+                <div class="img">
+                  <img src="phone.jpg"  alt="">
+                </div>
+                <div class="post-info">
+                  <div class="date">
+                    <span>Ariana</span>
+                  
+                  </div>
+                  <h1 class="title">
+                    I lost my phone 
+                  </h1>
+                  <p class="text">
+                    I lost my Iphone x today in ariana at afternoon , it has a random wallpaper and a white back . 
+                  </p>
+                  <h4>Contact</h4>
+                  <p class="text">
+                    Number : 50501765 
+                  </p>
+                  <p class="text">
+                    Mail : farouk@gmail.com 
+                  </p>
+                  <div class="con">
+                    <a id="heart3">
+                      <img type="button" id="heart3" src="heart-line.png" alt="" srcset="">
+                    </a>
+                    <a id="heart1">
+                      <img id="heart" data-toggle="modal" data-target="#exampleModal1"  type="button" src="conversation.png" alt="" srcset="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+              <div class="post">
+                <div class="img">
+                  <img src="car.jpg"  alt="">
+                </div>
+                <div class="post-info">
+                  <div class="date">
+                    <span>Tunisia</span>
+                  
+                  </div>
+                  <h1 class="title">
+                    My car got stolen 
+                  </h1>
+                  <p class="text">
+                    My black bmw got stolen yesterday morning ,please call me if you see it .
+                  </p>
+                  <h4>Contact</h4>
+                  <p class="text">
+                    Number : 96738498
+                  </p>
+                  <p class="text">
+                    Mail : Amin@gmail.com
+                  </p>
+                  <div class="con">
+                    <a id="heart2">
+                      <img type="button" id="heart2" src="heart-line.png" alt="" srcset="">
+                    </a>
+                    <a id="heart1">
+                      <img id="heart" data-toggle="modal" data-target="#exampleModal1"  type="button" src="conversation.png" alt="" srcset="">
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              
+              <button type="button" id='bttn' class="btn btn-primary"> Add comment</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script >
+    
+    const posts = document.getElementById('list-home');
+    for(i=0;i<localStorage.length;i++){
+  const key=localStorage.key(i);
+  const value=localStorage.getItem(key);
+  console.log(JSON.parse(value));
+  posts.innerHTML += `
+  <div class="post">
+            <div class="img">
+              <img src="${JSON.parse(value).image}"  alt="">
+            </div>
+            <div class="post-info">
+              <div class="date">
+                <span>${JSON.parse(value).state}</span>
+              
+              </div>
+              <h1 class="title">
+                ${JSON.parse(value).title}
+              </h1>
+              <p class="text">
+                ${JSON.parse(value).description} 
+              </p>
+              <h4>Contact</h4>
+              <p class="text">
+                Number : ${JSON.parse(value).phone} 
+              </p>
+              <p class="text">
+                Mail : ${JSON.parse(value).mail} 
+              </p>
+              <div class="con">
+                    <a id="heart1">
+                      <img type="button" id="hearto" src="heart-line.png" alt="" srcset="">
+                    </a>
+                    <a id="heart1">
+                      <img data-toggle="modal" data-target="#exampleModal1"  type="button" id="heart" src="conversation.png" alt="" srcset="">
+                    </a>
+                  </div>
+            </div>
+          </div>
+  `
+}
+
+
+
+  </script>
+</body>
+</html>
